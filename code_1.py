@@ -46,3 +46,59 @@ for _ in range(jumlah_pizza):
         4: "Cheesy Bites",
         5: "Crown Crust"
     }
+
+     #dictionary daftar ukuran
+     daftar_ukuran = {
+        1: "Personal",
+        2: "Regular",
+        3: "Large"
+    }
+
+    #mengambil nama berdasarkan nomor yang di inputkan
+    nama_topping = daftar_topping[topping]
+    nama_crust = daftar_crust[crust]
+    nama_ukuran = daftar_ukuran[ukuran]
+
+    #deklarasi harga awal
+    harga = 0
+    hargacz = 0
+
+    #fungsi if untuk harga crust Pan beserta dengan harga per ukuran pizza
+    if crust == 1:
+        hargacrust = 43637 #harga crust Pan
+        if ukuran == 1:
+            hargacrstuk = 0 #harga jika ukuran personal
+        elif ukuran == 2:
+            hargacrstuk = 57273 #harga jika ukuran regular
+        else:
+            hargacrstuk = 89091 #harga jika ukuran large
+
+    #fungsi if untuk harga crust StuffedCrust Cheese beserta dengan harga per ukuran pizza
+    elif crust == 2:
+        hargacrust = 55455 #harga crust StuffedCrust Cheese
+        if ukuran == 1:
+            hargacrstuk = 0 #harga jika ukuran personal
+        elif ukuran == 2:
+            hargacrstuk = 65455 #harga jika ukuran regular
+        else:
+            hargacrstuk = 104545 #harga jika ukuran large
+
+    #fungsi if untuk harga crust StuffedCrust Sausage beserta dengan harga per ukuran pizza
+    elif crust == 3:
+        hargacrust = 52728 #harga crust StuffedCrust Sausage
+        if ukuran == 1:
+            hargacrstuk = 0 #harga jika ukuran personal
+        elif ukuran == 2:
+            hargacrstuk = 64545 #harga jika ukuran regular
+        else:
+            hargacrstuk = 102727 #harga jika ukuran large
+
+    #fungsi if untuk harga crust Cheesy Bites beserta dengan harga per ukuran pizza
+    elif crust == 4:
+        hargacrust = 57273 #harga crust Cheesy Bites
+        if ukuran == 1:
+            hargacrstuk = 0 #harga jika ukuran personal
+        elif ukuran == 2:
+            hargacrstuk = 66364 #harga jika ukuran regular
+        else:
+            hargacrstuk = 107273 #harga jika ukuran large
